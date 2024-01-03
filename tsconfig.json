@@ -1,0 +1,35 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "rootDir": "./",
+    "target": "ESNext",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "isolatedModules": true,
+  },
+  "include": [
+    "packages",
+    "apps"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "plugins": [
+    { "transform": "typescript-transform-paths" },
+    { "transform": "typescript-transform-paths", "afterDeclarations": true }
+  ]
+}
